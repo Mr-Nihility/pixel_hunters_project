@@ -1,10 +1,13 @@
 .how-we-do {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.how-we-do {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 192px;
+  padding-bottom: 50px;
+  @include mq(tablet) {
+    padding-top: 202px;
+  }
+  @include mq(desktop) {
+    padding-top: 280px;
+    padding-bottom: 130px;
+  }
 }
 .do-title {
   font-size: 20px;
@@ -54,8 +57,13 @@
     background-color: var(--second-color);
     box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
     padding: 30px 15px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     @include mq(mobile-only) {
-      margin-bottom: 16px;
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
     }
     @include mq(tablet) {
       width: 310px;
@@ -81,10 +89,6 @@
     &:focus .do-list-text {
       color: var(--second-color);
     }
-    &:hover .do-list-title::after,
-    &:focus .do-list-title::after {
-      background-color: var(--second-color);
-    }
   }
 }
 .do-list-icon {
@@ -93,6 +97,9 @@
   background-repeat: no-repeat;
   background-position: center;
   fill: var(--accent-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include mq(mobile-only) {
   }
   @include mq(tablet) {
@@ -109,6 +116,9 @@
   margin: 20px 0 30px;
   width: 100%;
   height: 40px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include mq(tablet) {
     font-size: 20px;
     line-height: 1.4;
@@ -125,6 +135,14 @@
   background-color: var(--accent-color);
   width: 25px;
   height: 2px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .do-list__item:hover &,
+  .do-list__item:focus & {
+    background-color: var(--second-color);
+  }
 }
 .do-list-text {
   width: 100%;
@@ -136,6 +154,9 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: var(--grey-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include mq(desktop) {
     font-size: 18px;
     line-height: 1.55;
