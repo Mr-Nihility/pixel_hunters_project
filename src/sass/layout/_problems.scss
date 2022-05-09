@@ -1,0 +1,57 @@
+body {
+  counter-reset: section;
+}
+
+h3::before {
+  counter-increment: section;
+  content: '— ' counter(section) ' ';
+}
+
+.problems {
+  position: relative;
+  padding-top: 25px;
+  height: 545px;
+  background-color: var(--main-color);
+}
+.section {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  width: 280px;
+}
+
+.problems__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 130%;
+  /* or 31px */
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+.problems__title-span {
+  color: var(--accent-color);
+}
+
+.problems__list {
+  background-color: #fff;
+  box-shadow: 4px 6.928px 15.54px 5.46px rgb(29 29 27 / 4%);
+  list-style: none;
+  padding: 15px 20px 30px 28px;
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.problems__item {
+}
+
+.problems__number {
+}
+
+.problems__subtitle {
+}

@@ -13,6 +13,7 @@ body {
   margin-right: auto;
   padding: 0 20px;
   outline: 1px solid tomato;
+  // max-width: 480px;
 
   @media screen and (min-width: 480px) {
     width: 320px;
