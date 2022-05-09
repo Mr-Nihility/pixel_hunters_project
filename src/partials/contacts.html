@@ -18,10 +18,25 @@
     </p>
     <form class="registration__form">
       <div class="registration__form--inputs">
-        <input class="registration__item" type="text" name="username" placeholder="Name*" />
-        <input class="registration__item" type="tel" name="phone" placeholder="Phone*" />
+        <input
+          class="registration__item"
+          type="text"
+          title="Barak Obama"
+          name="username"
+          placeholder="Name*"
+          required="required"
+        />
+        <input
+          class="registration__item"
+          type="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="093-123-23-23"
+          name="phone"
+          placeholder="Phone*"
+          required="required"
+        />
       </div>
-      <button class="button button__registration" type="button">i want a free lesson</button>
+      <button class="button button__registration" type="submit">i want a free lesson</button>
     </form>
   </div>
 </section>

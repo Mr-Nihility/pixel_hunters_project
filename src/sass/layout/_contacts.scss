@@ -3,6 +3,10 @@
   padding-bottom: 55px;
   background-color: var(--main-color);
 
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   @include mq(tablet) {
     padding-top: 66px;
     padding-bottom: 66px;
@@ -11,6 +15,30 @@
   @include mq(desktop) {
     padding-top: 100px;
     padding-bottom: 62px;
+  }
+
+  @include mq(mobile-only) {
+    background-image: url(../images/bg-footer_mobile.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-footer_mobile@2x.png);
+    }
+  }
+
+  @include mq(tablet) {
+    background-image: url(../images/bg-footer_tablet.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-footer_tablet@2x.png);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(../images/bg-footer_desktop.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-footer_desktop@2x.png);
+    }
   }
 }
 
