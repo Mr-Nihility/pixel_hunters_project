@@ -1,0 +1,128 @@
+/* Слайдер */
+.slick-slider {
+  position: relative;
+  z-index: 1;
+  -webkit-touch-callout: none;
+  user-select: none;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+// /* Слайдер запущен */
+// .slick-slider.slick-initialized {
+// }
+// .slick-list.dragging {
+// }
+// /* Слайдер с точками */
+// .slick-slider.slick-dotted {
+// }
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+  cursor: pointer;
+  cursor: hand;
+
+  @media screen and (min-width: 1366px) {
+    padding: 30px;
+  }
+}
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+}
+// /* Слайд */
+// .slick-slide {
+// }
+// /* Слайд активный (показывается) */
+// .slick-slide.slick-active {
+// }
+// /* Слайд основной */
+// .slick-slide.slick-current {
+// }
+// /* Слайд по центру */
+// .slick-slide.slick-center {
+// }
+// /* Клонированный слайд */
+// .slick-slide.slick-cloned {
+// }
+/* Стрелка */
+.slider-nav .slick-arrow,
+.slider-for .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 1020;
+  line-height: 0px;
+  font-size: 0px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  background-color: transparent;
+  border-color: transparent;
+  transition: transform 250ms ease-in-out;
+
+  // &:hover,
+  // &:focus {
+  //   transform: scale(1.1);
+  // }
+}
+
+/* Стрелка влево */
+.slider-nav .slick-prev {
+  left: -70px;
+  background-image: url(../images/review/arrow_1.svg);
+
+  @media screen and (min-width: 480px) {
+    left: -50px;
+  }
+}
+
+.slider-for .slick-prev {
+  left: -17px;
+
+  background-image: url(../images/review/arrow_1.svg);
+
+  @media screen and (min-width: 1366px) {
+    left: 40px;
+  }
+}
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {
+  right: -70px;
+  background-image: url(../images/review/arrow_2.svg);
+
+  @media screen and (min-width: 480px) {
+    right: -50px;
+  }
+}
+
+.slider-for .slick-next {
+  right: -15px;
+  background-image: url(../images/review/arrow_2.svg);
+
+  @media screen and (min-width: 1366px) {
+    right: 40px;
+  }
+}
+
+// /* Стрелка не активная */
+.slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+// /* Точки (булиты) */
+// .slick-dots {
+// }
+// .slick-dots li {
+// }
+// /* Активная точка */
+// .slick-dots li.slick-active {
+// }
+// /* Элемент точки */
+// .slick-dots li button {
+// }
