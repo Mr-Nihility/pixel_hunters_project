@@ -24,6 +24,14 @@
   letter-spacing: var(--main-ls);
   margin-bottom: 24px;
   color: var(--main-color);
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    font-size: 46px;
+  }
 }
 
 //slider-for customs
