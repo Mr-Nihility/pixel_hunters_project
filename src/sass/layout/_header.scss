@@ -1,0 +1,34 @@
+.header {
+    margin-bottom: 52px;
+}
+
+.header__logo {
+}
+
+.logo__upper-text {
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+
+    color: #111518;
+}
+
+.logo__down-text {
+    font-weight: 700;
+    font-size: 5px;
+    line-height: 1.2;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    color: #111518;
+
+    @media screen and (min-width: 768px) { 
+        font-size: 8px;
+        line-height: 1.25;
+    }
+}
+
+.logo__down-text--accent {
+    color: #FF6B09;
+}
