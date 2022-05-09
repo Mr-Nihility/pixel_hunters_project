@@ -4,28 +4,28 @@
  */
 
 // global
-@import './base';
-@import './reset';
-@import './vars';
-@import './mixins';
+@import './base/base';
+@import './base/reset';
+@import './base/vars';
+@import './base/mixins';
 
 //components
-@import './logo';
-@import './buttons';
-@import './slider';
+@import './components/logo';
+@import './components/buttons';
+@import './components/slider';
 
 //layout
-@import './header';
-@import './hero';
-@import './advantages';
-@import './problems';
-@import './how-we-do';
-@import './program';
-@import './benefits';
-@import './about';
-@import './guarantee';
-@import './review';
-@import './contacts';
-@import './footer';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/problems';
+@import './layout/how-we-do';
+@import './layout/program';
+@import './layout/benefits';
+@import './layout/about';
+@import './layout/guarantee';
+@import './layout/review';
+@import './layout/contacts';
+@import './layout/footer';
 
 // @import '.';
