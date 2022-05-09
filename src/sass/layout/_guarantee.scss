@@ -8,32 +8,74 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 30px;
+
+    @include mq(tablet) {
+      font-size: 26px;
+    }
+    @include mq(desktop) {
+      font-size: 46px;
+      padding-bottom: 50px;
+    }
   }
 }
 .guarantee-container {
   padding-top: 50px;
   padding-bottom: 50px;
   background: #f1f1f1;
+  @include mq(tablet) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    width: 688px;
+  }
+  @include mq(desktop) {
+    width: 1314px;
+    padding: 50px 112px 45px;
+  }
 }
 .guarantee-list {
-  padding-left: 35px;
+  max-width: 280px;
+  margin: auto;
+  @include mq(tablet) {
+    max-width: 560px;
+  }
+  @include mq(desktop) {
+    max-width: 1090px;
+  }
   &__item {
-    max-width: 245px;
+    padding-left: 35px;
+    position: relative;
     &:not(:last-child) {
-      margin-bottom: 23px;
+      padding-bottom: 23px;
+      border-left: 2px dashed #b9b9b9;
+    }
+    &:last-child {
+      border-left: 2px dashed #f1f1f1;
+    }
+    @include mq(tablet) {
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
     }
     &::before {
       display: block;
       content: '';
-      width: 25px;
-      height: 25px;
+      width: 15px;
+      height: 20px;
       position: absolute;
-      left: -6px;
+      left: -8px;
       top: 0;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url(../images/guarantee/Campfire.svg);
+      background-color: #f1f1f1;
+      background-image: url(../images/guarantee/Campfire-small.svg);
       z-index: 2;
+      @include mq(desktop) {
+        left: -12px;
+        width: 22px;
+        height: 30px;
+        background-image: url(../images/guarantee/Campfire.svg);
+      }
     }
   }
 }
@@ -42,8 +84,12 @@
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.7;
+  line-height: 1.6;
   color: var(--main-color);
+  @include mq(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
 }
 .guarantee-text-decor {
   color: #ff6b09;
