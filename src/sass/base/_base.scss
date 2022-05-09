@@ -1,0 +1,31 @@
+<<<<<<< Updated upstream
+=======
+body {
+  margin: 0;
+
+  // кольори і шрифт прописати через змінні
+  font-family: var(--main-font);
+  color: var(--main-color);
+  background-color: var(--second-color);
+}
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  outline: 1px solid tomato;
+
+  @media screen and (min-width: 480px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media screen and (min-width: 1366px) {
+    width: 1314px;
+  }
+}
+>>>>>>> Stashed changes
