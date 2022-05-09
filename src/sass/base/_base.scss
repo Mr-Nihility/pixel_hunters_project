@@ -2,9 +2,9 @@ body {
   margin: 0;
 
   // кольори і шрифт прописати через змінні
-  font-family: Rooboto, sans-serif;
-  color: #000000;
-  background-color: #ffffff;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  background-color: var(--second-color);
 }
 
 .container {
