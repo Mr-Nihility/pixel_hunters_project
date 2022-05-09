@@ -1,9 +1,50 @@
-.guarantee__title {
+.guarantee {
+  &__title {
+    font-family: var(--main-font);
+    font-weight: 800;
+    color: var(--main-color);
+    font-size: 20px;
+    line-height: 1.3;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+  }
+}
+.guarantee-container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #f1f1f1;
+}
+.guarantee-list {
+  padding-left: 35px;
+  &__item {
+    max-width: 245px;
+    &:not(:last-child) {
+      margin-bottom: 23px;
+    }
+    &::before {
+      display: block;
+      content: '';
+      width: 25px;
+      height: 25px;
+      position: absolute;
+      left: -6px;
+      top: 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url(../images/guarantee/Campfire.svg);
+      z-index: 2;
+    }
+  }
+}
+.guarantee-list-text {
   font-family: var(--main-font);
-  font-weight: 800;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7;
   color: var(--main-color);
-  font-size: 20px;
-  line-height: 1.3;
-  text-align: center;
-  letter-spacing: 0.03em;
+}
+.guarantee-text-decor {
+  color: #ff6b09;
 }
