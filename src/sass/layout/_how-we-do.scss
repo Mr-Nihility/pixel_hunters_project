@@ -35,16 +35,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @include mq(tablet) {
     justify-content: center;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
   }
 
   @include mq(desktop) {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
