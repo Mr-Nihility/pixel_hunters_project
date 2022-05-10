@@ -1,4 +1,9 @@
 .guarantee {
+  padding-top: 25px;
+  @include mq(desktop) {
+    padding-top: 65px;
+  }
+
   &__title {
     font-family: var(--main-font);
     font-weight: 800;
@@ -8,13 +13,13 @@
     text-align: center;
     letter-spacing: 0.03em;
     padding-bottom: 30px;
+    background-color: #fff;
 
     @include mq(tablet) {
       font-size: 26px;
     }
     @include mq(desktop) {
       font-size: 46px;
-      padding-bottom: 50px;
     }
   }
 }
@@ -22,6 +27,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background: #f1f1f1;
+
   @include mq(tablet) {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -34,8 +40,9 @@
   }
 }
 .guarantee-list {
-  max-width: 280px;
+  // max-width: 280px;
   margin: auto;
+
   @include mq(tablet) {
     max-width: 560px;
   }
