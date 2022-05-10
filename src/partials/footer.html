@@ -1,5 +1,46 @@
 <footer class="footer">
   <div class="container">
-    <h2></h2>
+    <div class="footer__container--top">
+      <a class="footer__logo">
+        <picture>
+          <source
+            srcset="./images/header/logo-black_lg.png 1x, ./images/header/logo-black@2x_lg.png 2x"
+            media="(min-width: 1366px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/header/logo-black_md.png 1x, ./images/header/logo-black@2x_md.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/header/logo-black_sm.png 1x, ./images/header/logo-black@2x_sm.png 2x"
+            media="(max-width: 767px)"
+            type="image/png"
+          />
+          <img
+            src="./images/header/logo-black_sm.png"
+            alt="логотип"
+            class="logo_img logo_img--footer"
+            width="80"
+            height="29"
+          />
+        </picture>
+      </a>
+      <div class="footer__contacts">
+        <a class="footer__phone" href="tel:+38(000)0000000">
+          <svg class="footer__phone--icon" width="20" height="20">
+            <use href="./images/symbol-defs.svg#phone-icon"></use>
+          </svg>
+          +38 (000) 000 00 00
+        </a>
+        <a class="footer__link" href="https://www.instagram.com/" target="_blank">
+          <svg class="footer__link--icon" width="25" height="25">
+            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <p class="footer__rights">&#169; All rights reserved, 2019</p>
   </div>
 </footer>

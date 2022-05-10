@@ -1,4 +1,4 @@
-<section class="contacts">
+<section class="contacts" id="contacts">
   <div class="container">
     <h2 class="contacts__title">
       Registration for a
@@ -21,7 +21,8 @@
         <input
           class="registration__item"
           type="text"
-          title="Barak Obama"
+          pattern="[A-z]{4,15}"
+          title="enter username. 4 to 15 lowercase English letters"
           name="username"
           placeholder="Name*"
           required="required"

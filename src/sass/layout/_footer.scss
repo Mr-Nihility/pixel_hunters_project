@@ -1,0 +1,151 @@
+.footer {
+  background-color: #e5e5e5;
+  background-image: linear-gradient(to top, #111518 70px, #e5e5e5 70px);
+
+  padding-top: 30px;
+  padding-bottom: 21px;
+
+  @include mq(tablet) {
+    // display: flex;
+    // justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  @include mq(tablet) {
+    // display: flex;
+    // justify-content: space-between;
+    padding-top: 52px;
+  }
+}
+
+.footer__container--top {
+  @include mq(tablet) {
+    margin-bottom: 64px;
+    display: flex;
+  }
+}
+
+.footer__contacts {
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  display: block;
+  width: 80px;
+  cursor: pointer;
+
+  @include mq(mobile-only) {
+    margin-bottom: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    flex-basis: 128px;
+    margin-right: auto;
+  }
+
+  @include mq(desktop) {
+    margin-right: 290px;
+  }
+}
+
+.footer__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--semi-bold-weight);
+  font-size: var(--main-size);
+  line-height: 1.2;
+  letter-spacing: var(--large-ls);
+  color: var(--main-color);
+
+  @include mq(mobile-only) {
+    margin-bottom: 31px;
+  }
+  @include mq(tablet) {
+    font-size: var(--medium-size);
+  }
+
+  @include mq(tablet) {
+    font-size: 30px;
+  }
+
+  &--icon {
+    fill: var(--accent-color);
+    margin-right: 10px;
+    @include mq(tablet) {
+      width: 24px;
+      height: 23px;
+    }
+    @include mq(desktop) {
+      width: 30px;
+      height: 29px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.footer__phone::after {
+  @include mq(tablet) {
+    content: '';
+    width: 40px;
+    margin: 24px 0;
+    border: 1px solid var(--grey-color);
+    transform: rotate(90deg);
+  }
+}
+
+.footer__link {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: radial-gradient(
+    110.28% 110.28% at 20.5% 87.39%,
+    #fae100 0%,
+    #fadc04 5.44%,
+    #fbce0e 11.67%,
+    #fcb720 18.29%,
+    #fe9838 25.14%,
+    #ff7950 30.54%,
+    #ff1c74 49.22%,
+    #6c1cd1 100%
+  );
+
+  @include mq(mobile-only) {
+    margin-bottom: 51px;
+  }
+
+  &--icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    fill: var(--second-color);
+  }
+}
+
+.footer__rights {
+  max-width: 185px;
+  // padding: 21px 0;
+  font-weight: var(--medium-weight);
+  font-size: var(--main-size);
+  line-height: 2;
+  color: var(--grey-color);
+  @include mq(mobile-only) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(tablet) {
+    margin-right: auto;
+  }
+}
