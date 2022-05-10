@@ -13,9 +13,17 @@
             ENGLISH</span> -->
             <picture>
                 <source srcset="
+                ./images/header/logo-black_lg.png  1x,
+                ./images/header/logo-black@2x_lg.png 2x
+                " media="(min-width: 1366px)" type="image/png" />
+                <source srcset="
+                ./images/header/logo-black_md.png  1x,
+                ./images/header/logo-black@2x_md.png 2x
+                " media="(min-width: 768px)" type="image/png" />
+                <source srcset="
                 ./images/header/logo-black_sm.png  1x,
                 ./images/header/logo-black@2x_sm.png 2x
-                " media="(max-width: 767px)" type="image/jpg" />
+                " media="(max-width: 767px)" type="image/png" />
                 <img src="./images/header/logo-black_sm.png" alt="логотип">
             </picture>
         </a>
@@ -39,6 +47,10 @@
         <div class="mobile__menu" data-menu>
             <a class="mobile__logo" href="">
                 <picture>
+                    <source srcset="
+                    ./images/header/logo-white_md.png  1x,
+                    ./images/header/logo-white@2x_md.png 2x
+                    " media="(min-width: 768px)" type="image/png" />
                     <source srcset="
                     ./images/header/logo-white_sm.png  1x,
                     ./images/header/logo-white@2x_sm.png 2x
