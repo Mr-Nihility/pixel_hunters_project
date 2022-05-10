@@ -1,6 +1,14 @@
 .about {
-  padding-top: 20px;
+  padding-top: 270px;
   padding-bottom: 25px;
+
+  @include mq(tablet) {
+    padding-top: 302px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 329px;
+  }
 }
 
 .about__title {
