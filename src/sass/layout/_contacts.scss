@@ -18,26 +18,26 @@
   }
 
   @include mq(mobile-only) {
-    background-image: url(../images/bg-footer_mobile.png);
+    background-image: url(../images/contacts/bg-footer_mobile.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/bg-footer_mobile@2x.png);
+      background-image: url(../images/contacts/bg-footer_mobile@2x.png);
     }
   }
 
   @include mq(tablet) {
-    background-image: url(../images/bg-footer_tablet.png);
+    background-image: url(../images/contacts/bg-footer_tablet.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/bg-footer_tablet@2x.png);
+      background-image: url(../images/contacts/bg-footer_tablet@2x.png);
     }
   }
 
   @include mq(desktop) {
-    background-image: url(../images/bg-footer_desktop.png);
+    background-image: url(../images/contacts/bg-footer_desktop.png);
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/bg-footer_desktop@2x.png);
+      background-image: url(../images/contacts/bg-footer_desktop@2x.png);
     }
   }
 }
@@ -156,6 +156,17 @@
   @include mq(desktop) {
     width: 478px;
   }
+}
+
+.registration__item:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+.registration__item:valid:not(:placeholder-shown) {
+  border-color: green;
+}
+
+.registration__item:not(:placeholder-shown) {
+  background-color: rgba(17, 21, 24, 0.9);
 }
 
 ::placeholder {
