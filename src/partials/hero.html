@@ -1,16 +1,31 @@
 <section class="hero">
     <div class="hero__container container">
-        <h1 class="hero__title">Complex preparation for English UPE</h1>
-        <p class="hero__text">
-            It won’t be easy.
-            <span class="hero__text-item">But you’re guaranteed to get</span>
-            <span class="hero__text-link">+25 points</span>
-        </p>
-        <button class="hero__btn" type="button" data-menu-button aria-expanded="false">
-            I want a free lesson
-        </button>
-    </div>
-    <div class="hero__photo">
-        <img src="../src/images/hero/teamhero.jpg" alt="photo team">
+            <div class="hero__block">
+                <h1 class="hero__title">Complex preparation for English UPE</h1>
+                <p class="hero__text">It won’t be easy.</p>
+                <p class="hero__item">But you’re guaranteed to get 
+                    <span class="hero__item-accent">+25 points</span>
+                </p>
+                <button class="button__hero--lesson hero__btn button" type="button" data-menu-button aria-expanded="false">
+                    I want a free lesson
+                </button>
+            </div>
+            <div>
+                <picture class="hero__photo">
+                    <source srcset="
+                                ../src/images/hero/hero_lg.png  1x,
+                                ../src/images/hero/hero@2x_lg.png 2x
+                                " media="(min-width: 1366px)" type="image/png" />
+                    <source srcset="
+                                ../src/images/hero/hero_md.png  1x,
+                                ../src/images/hero/hero@2x_md.png 2x
+                                " media="(min-width: 768px)" type="image/png" />
+                    <source srcset="
+                                ../src/images/hero/hero_sm.png  1x,
+                                ../src/images/hero/hero@2x_sm.png 2x
+                                " media="(max-width: 767px)" type="image/png" />
+                    <img src="../src/images/hero/hero_sm.png" alt="photo team">
+                </picture>
+            </div>
     </div>
 </section>
