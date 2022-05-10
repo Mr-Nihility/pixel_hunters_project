@@ -43,7 +43,11 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -71%);
+
+  @include mq(tablet) {
+    transform: translate(-50%, -50%);
+  }
 }
 .benefits-list {
   display: flex;
@@ -55,6 +59,7 @@
   margin-right: auto;
   height: 638px;
   background-color: var(--second-color);
+
   @include mq(tablet) {
     justify-content: center;
     flex-wrap: wrap;
