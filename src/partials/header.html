@@ -1,64 +1,80 @@
 <header class="header">
-    <div class="header__container container">
-        <a class="header__logo logo" href="">
-            <picture>
-                <source srcset="
-                ./images/header/logo-black_lg.png  1x,
-                ./images/header/logo-black@2x_lg.png 2x
-                " media="(min-width: 1366px)" type="image/png" />
-                <source srcset="
-                ./images/header/logo-black_md.png  1x,
-                ./images/header/logo-black@2x_md.png 2x
-                " media="(min-width: 768px)" type="image/png" />
-                <source srcset="
-                ./images/header/logo-black_sm.png  1x,
-                ./images/header/logo-black@2x_sm.png 2x
-                " media="(max-width: 767px)" type="image/png" />
-                <img src="./images/header/logo-black_sm.png" alt="логотип" class="logo_img" width="80" height="29">
-            </picture>
-        </a>
-        <nav class="nav">
-            <ul class="nav__link">
-                <li class="nav--item">Studying program</li>
-                <li class="nav--item">About</li>
-                <li class="nav--item">Training options</li>
-                <li class="nav--item">Contacts</li>
-            </ul>
-        </nav>
-        <button class="button__hero--consultation nav-btn button" type="button">
-            Consultation by phone
-        </button>
-        <button class="burger__btn" type="button" data-menu-button aria-expanded="false">
-            <svg class="burger__icon" width="34" height="34">
-                <use class="burger__open" href="./images/symbol-defs.svg#menu-icon-open" ></use>
-                <use class="burger_close" href="./images/symbol-defs.svg#menu-icon-close" ></use>
-            </svg>
-        </button>
-        <div class="mobile__menu" data-menu>
-            <a class="mobile__logo" href="">
-                <picture>
-                    <source srcset="
-                    ./images/header/logo-white_md.png  1x,
-                    ./images/header/logo-white@2x_md.png 2x
-                    " media="(min-width: 768px)" type="image/png" />
-                    <source srcset="
-                    ./images/header/logo-white_sm.png  1x,
-                    ./images/header/logo-white@2x_sm.png 2x
-                    " media="(max-width: 767px)" type="image/jpg" />
-                    <img src="./images/header/logo-white_sm.png" alt="логотип" width="80" height="29">
-                </picture>
-            </a>
-            <nav class="mobile__nav">
-                <ul class="mobile__nav-link">
-                    <li class="mobile__nav--item">Studying program</li>
-                    <li class="mobile__nav--item">About</li>
-                    <li class="mobile__nav--item">Training options</li>
-                    <li class="mobile__nav--item">Contacts</li>
-                </ul>
-            </nav>
-            <button class="button__hero--consultation button" type="button" data-menu-button aria-expanded="false">
-                Consultation by phone
-            </button>
-        </div>
+  <div class="header__container container">
+    <a class="header__logo logo" href="">
+      <picture>
+        <source
+          srcset="./images/header/logo-black_lg.png 1x, ./images/header/logo-black@2x_lg.png 2x"
+          media="(min-width: 1366px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/header/logo-black_md.png 1x, ./images/header/logo-black@2x_md.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="./images/header/logo-black_sm.png 1x, ./images/header/logo-black@2x_sm.png 2x"
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img
+          src="./images/header/logo-black_sm.png"
+          alt="логотип"
+          class="logo_img"
+          width="80"
+          height="29"
+        />
+      </picture>
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#progam">Studying program</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+        <li class="nav__item"><a class="nav__link" href="#benefits">Training options</a></li>
+        <li class="nav__item"><a class="nav__link" href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <button class="button__hero--consultation nav-btn button" type="button">
+      Consultation by phone
+    </button>
+    <button class="burger__btn" type="button" data-menu-button aria-expanded="false">
+      <svg class="burger__icon" width="34" height="34">
+        <use class="burger__open" href="./images/symbol-defs.svg#menu-icon-open"></use>
+        <use class="burger_close" href="./images/symbol-defs.svg#menu-icon-close"></use>
+      </svg>
+    </button>
+    <div class="mobile__menu" data-menu>
+      <a class="mobile__logo" href="">
+        <picture>
+          <source
+            srcset="./images/header/logo-white_md.png 1x, ./images/header/logo-white@2x_md.png 2x"
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+          <source
+            srcset="./images/header/logo-white_sm.png 1x, ./images/header/logo-white@2x_sm.png 2x"
+            media="(max-width: 767px)"
+            type="image/jpg"
+          />
+          <img src="./images/header/logo-white_sm.png" alt="логотип" width="80" height="29" />
+        </picture>
+      </a>
+      <nav class="mobile__nav">
+        <ul class="mobile__nav-link">
+          <li class="mobile__nav--item">Studying program</li>
+          <li class="mobile__nav--item">About</li>
+          <li class="mobile__nav--item">Training options</li>
+          <li class="mobile__nav--item">Contacts</li>
+        </ul>
+      </nav>
+      <button
+        class="button__hero--consultation button"
+        type="button"
+        data-menu-button
+        aria-expanded="false"
+      >
+        Consultation by phone
+      </button>
     </div>
+  </div>
 </header>
