@@ -1,0 +1,47 @@
+.button {
+  margin: 0 auto;
+  width: 260px;
+  padding: 14px 5px;
+  border: none;
+  font-weight: var(--bold-weight);
+  font-size: var(--small-size);
+  line-height: 1.25;
+  text-align: center;
+  letter-spacing: var(--large-ls);
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &__hero--lesson,
+  &__registration {
+    color: var(--second-color);
+    background: var(--accent-color);
+
+    @include mq(desktop) {
+      width: 354px;
+      padding: 26px 70px;
+      font-size: var(--main-size);
+      line-height: 1.2;
+      letter-spacing: var(--huge-ls);
+    }
+  }
+
+  &__hero--consultation {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: transparent;
+
+    @include mq(tablet) {
+      font-size: var(--main-size);
+      line-height: 1.2;
+      letter-spacing: var(--huge-ls);
+    }
+
+    @include mq(desktop) {
+      width: 336px;
+      padding: 26px 24px;
+      font-size: var(--main-size);
+      line-height: 1.2;
+      letter-spacing: var(--huge-ls);
+    }
+  }
+}

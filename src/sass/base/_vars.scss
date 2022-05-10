@@ -1,0 +1,29 @@
+:root {
+  //   Colors
+  --main-color: #111518;
+  --second-color: #ffffff;
+  --grey-color: #b9b9b9;
+  --accent-color: #ff6b09;
+
+  //    Fonts
+  --main-font: Montserrat, sans-serif;
+
+  //   Font Weight
+  --extra-bold-weight: 800;
+  --bold-weight: 700;
+  --semi-bold-weight: 600;
+  --medium-weight: 500;
+
+  //   Font Size (mobile)
+  //   на десктопе и таблетке шрифты другие на некоторых секциях
+  --main-size: 14px;
+  --small-size: 12px;
+  --medium-size: 20px;
+  --large-size: 26px;
+
+  //   letter-spacing
+  --main-ls: 0.03em;
+  --secondary-ls: 0.06em;
+  --large-ls: 0.08em;
+  --huge-ls: 0.14em;
+}

@@ -1,0 +1,130 @@
+.advantages {
+  padding-top: 22px;
+  padding-bottom: 60px;
+
+  @include mq(tablet) {
+    padding-top: 48px;
+    padding-bottom: 45px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 97px;
+    padding-bottom: 130px;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mq(tablet) {
+    flex-direction: row;
+    gap: 21px;
+  }
+}
+
+.advantages__item {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 60px;
+  vertical-align: middle;
+  width: 200px;
+
+  @include mq(mobile-only) {
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  @include mq(desktop) {
+    width: 448px;
+    height: 102px;
+  }
+
+  &::before {
+    content: '';
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-size: contain;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include mq(desktop) {
+      width: 100px;
+      height: 102px;
+    }
+  }
+}
+
+.item-1 {
+  &::before {
+    background-image: url(../images/advantages/border-user.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages/border-user-lg.svg);
+    }
+  }
+}
+
+.item-2 {
+  &::before {
+    background-image: url(../images/advantages/border-mobile.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages/border-mobile-lg.svg);
+    }
+  }
+}
+
+.item-3 {
+  &::before {
+    background-image: url(../images/advantages/border-dollar.svg);
+
+    @include mq(desktop) {
+      background-image: url(../images/advantages/border-dollar-lg.svg);
+    }
+  }
+}
+
+.advantages__icon {
+  fill: var(--accent-color);
+  margin-right: 10px;
+}
+
+.advantages__text {
+  position: absolute;
+
+  font-size: var(--main-size);
+  font-weight: var(--bold-weight);
+  line-height: 1.65;
+  letter-spacing: var(--large-ls);
+
+  color: var(--main-color);
+
+  padding-left: 68px;
+
+  @include mq(desktop) {
+    font-size: var(--medium-size);
+    padding-left: 82px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
