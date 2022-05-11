@@ -1,9 +1,11 @@
 .hero {
   background-image: url(../images/hero/vector_sm.png);
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: 0 -97px;
   background-size: 100%;
   background-color: FEFEFE;
+  padding-top: 22px;
+  padding-bottom: 47px;
 
   @media screen and (min-width: 480px) {
     background-image: url(../images/hero/vector_sm.png);
@@ -17,33 +19,37 @@
 
   @media screen and (min-width: 768px) {
     background-image: url(../images/hero/vector_md.png);
-    background-position: 0 -155px;
+    background-position: 0 -130px;
+
+    padding-top: 53px;
+    padding-bottom: 64px;
   }
 
   @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 768px) and (min-resolution: 192dpi),
     screen and (min-width: 768px) and (min-resolution: 2dppx) {
     background-image: url(../images/hero/vector@2x_md.png);
-    background-position: 0 -155px;
+    background-position: 0 -130px;
   }
 
   @media screen and (min-width: 1366px) {
     background-image: url(../images/hero/vector_lg.png);
-    background-position: -80px -22px;
+    // background-position: -80px -22px;
+    background-position: 0 0;
+    padding-top: 15px;
+    padding-bottom: 48px;
   }
 
   @media screen and (min-width: 1366px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1366px) and (min-resolution: 192dpi),
     screen and (min-width: 1366px) and (min-resolution: 2dppx) {
     background-image: url(../images/hero/vector@2x_lg.png);
-    background-position: -80px -22px;
+    // background-position: -80px -22px;
+    background-position: 0 0;
   }
 }
 
 .hero__container {
-  padding-top: 22px;
-  padding-bottom: 47px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -52,8 +58,11 @@
 }
 
 .hero__block {
+  margin-bottom: 55px;
+
   @media screen and (min-width: 768px) {
     max-width: 332px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
@@ -147,7 +156,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  margin-top: 55px;
-  margin-bottom: 47px;
+
+  @include mq(tablet) {
+    width: 321px;
+    height: 320px;
+  }
+  @include mq(desktop) {
+    width: 719px;
+    height: 718px;
+  }
 }

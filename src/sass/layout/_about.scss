@@ -1,13 +1,13 @@
 .about {
-  padding-top: 270px;
+  padding-top: 20px;
   padding-bottom: 25px;
 
   @include mq(tablet) {
-    padding-top: 302px;
+    padding-top: 25px;
   }
 
   @include mq(desktop) {
-    padding-top: 329px;
+    padding-top: 65px;
     padding-bottom: 65px;
   }
 }
