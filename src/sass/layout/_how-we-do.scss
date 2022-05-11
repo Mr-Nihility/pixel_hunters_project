@@ -37,8 +37,8 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  
+  // align-items: center;
+
   @include mq(tablet) {
     justify-content: center;
     flex-wrap: wrap;
@@ -52,7 +52,8 @@
 
   &__item {
     width: 280px;
-    // height: 280px;
+    flex-grow: 1;
+
     text-align: center;
     background-color: var(--second-color);
     box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
@@ -67,12 +68,12 @@
     }
     @include mq(tablet) {
       width: 310px;
-      // height: 310px;
+
       padding-top: 40px;
     }
     @include mq(desktop) {
       width: 418px;
-      // height: 380px;
+
       padding-top: 40px;
     }
 
