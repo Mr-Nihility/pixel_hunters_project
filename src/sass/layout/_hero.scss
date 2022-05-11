@@ -125,6 +125,16 @@
   transition-duration: var(--duration);
   transition-timing-function: var(--cubic-bezier);
 
+  @include mq(tablet) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  @include mq(desktop) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--second-color);
