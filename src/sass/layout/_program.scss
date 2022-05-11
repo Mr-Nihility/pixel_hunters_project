@@ -3,18 +3,18 @@
   background-color: var(--main-color);
 
   padding-top: 50px;
-  padding-bottom: 541px;
+  padding-bottom: 25px;
 
   overflow: hidden;
 
   @include mq(tablet) {
     padding-top: 60px;
-    padding-bottom: 392px;
+    padding-bottom: 95px;
   }
 
   @include mq(desktop) {
-    padding-top: 119px;
-    padding-bottom: 364px;
+    padding-top: 120px;
+    padding-bottom: 82px;
   }
 }
 
