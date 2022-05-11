@@ -47,7 +47,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 24px;
-  // padding: 0 5px;
   font-weight: var(--extra-bold-weight);
   font-size: var(--main-size);
   line-height: 1.28;
@@ -117,20 +116,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &--inputs {
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-
-    @include mq(tablet) {
-      margin-bottom: 31px;
-    }
-
-    @include mq(desktop) {
-      margin-bottom: 80px;
-    }
-  }
 }
 
 .registration__item {

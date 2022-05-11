@@ -8,6 +8,10 @@ body {
 
   // от бакузова
   counter-reset: section;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 .container {
