@@ -15,9 +15,10 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   @include mq(tablet) {
     flex-direction: row;
@@ -40,7 +41,7 @@
   }
 
   @include mq(desktop) {
-    width: 448px;
+    width: 408px;
     height: 102px;
   }
 
