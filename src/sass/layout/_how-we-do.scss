@@ -28,7 +28,7 @@
     text-align: start;
     width: 866px;
     height: 57px;
-    margin: 0 5px 50px;
+    margin: 0 auto 50px 0;
   }
 }
 .do-list {
@@ -38,6 +38,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   @include mq(tablet) {
     justify-content: center;
     flex-wrap: wrap;
@@ -46,14 +47,12 @@
   }
 
   @include mq(desktop) {
-    flex-wrap: wrap;
-    flex-direction: row;
     gap: 30px;
   }
 
   &__item {
     width: 280px;
-    height: 280px;
+    // height: 280px;
     text-align: center;
     background-color: var(--second-color);
     box-shadow: 4px 6.928px 23.68px 8.32px rgb(29 29 27 / 11%);
@@ -68,12 +67,12 @@
     }
     @include mq(tablet) {
       width: 310px;
-      height: 310px;
+      // height: 310px;
       padding-top: 40px;
     }
     @include mq(desktop) {
-      width: 400px;
-      height: 380px;
+      width: 418px;
+      // height: 380px;
       padding-top: 40px;
     }
 
