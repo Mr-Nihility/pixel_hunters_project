@@ -37,13 +37,14 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
 
   @include mq(tablet) {
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
+    align-items: stretch;
   }
 
   @include mq(desktop) {

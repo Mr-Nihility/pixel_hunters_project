@@ -220,6 +220,19 @@
     left: 35px;
   }
 
+  @media screen and (min-width: 375px) {
+    &.is-hidden {
+      bottom: 20px;
+      left: 239px;
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    &.is-hidden {
+      bottom: 20px;
+      left: 290px;
+    }
+  }
   @include mq(tablet) {
     left: 353px;
 
