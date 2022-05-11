@@ -64,6 +64,12 @@
 .nav-btn {
   display: none;
 
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--second-color);
+  }
+
   @media screen and (min-width: 768px) {
     display: block;
     margin-left: 300px;
@@ -146,6 +152,9 @@
 }
 
 .mobile__logo {
+  @media screen and (min-width: 768px) {
+    width: 128px;
+  }
 }
 
 .mobile__nav {
