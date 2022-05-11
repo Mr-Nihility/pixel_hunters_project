@@ -1,27 +1,15 @@
 .footer {
   background-color: #e5e5e5;
   background-image: linear-gradient(to top, #111518 70px, #e5e5e5 70px);
-
   padding-top: 30px;
   padding-bottom: 21px;
 
   @include mq(tablet) {
-    // display: flex;
-    // justify-content: space-between;
     padding-top: 40px;
   }
 
   @include mq(tablet) {
-    // display: flex;
-    // justify-content: space-between;
     padding-top: 52px;
-  }
-}
-
-.footer__container--top {
-  @include mq(tablet) {
-    margin-bottom: 64px;
-    display: flex;
   }
 }
 
@@ -29,6 +17,13 @@
   @include mq(tablet) {
     display: flex;
     align-items: center;
+  }
+}
+
+.footer__container--top {
+  @include mq(tablet) {
+    margin-bottom: 64px;
+    display: flex;
   }
 }
 
@@ -135,7 +130,6 @@
 
 .footer__rights {
   max-width: 185px;
-  // padding: 21px 0;
   font-weight: var(--medium-weight);
   font-size: var(--main-size);
   line-height: 2;
