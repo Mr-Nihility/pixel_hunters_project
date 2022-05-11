@@ -57,3 +57,17 @@
     }
   }
 }
+
+.button__registration {
+  outline: 2px solid transparent;
+  transition: color var(--duration) var(--cubic-bezier),
+    background-color var(--duration) var(--cubic-bezier),
+    outline var(--duration) var(--cubic-bezier);
+}
+
+.button__registration:hover,
+.button__registration:focus {
+  color: var(--accent-color);
+  background-color: transparent;
+  outline: 2px solid var(--accent-color);
+}
