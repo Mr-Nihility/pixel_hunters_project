@@ -169,6 +169,10 @@
     display: flex;
     justify-content: center;
   }
+  @media screen and (orientation: landscape) and (min-width: 480px) {
+    margin-top: 36px;
+    margin-bottom: 36px;
+  }
 }
 
 .mobile__nav-link {
