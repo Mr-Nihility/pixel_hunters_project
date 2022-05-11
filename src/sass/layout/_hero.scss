@@ -119,6 +119,10 @@
   margin-right: auto;
   margin-top: 52px;
   outline: transparent;
+  border: 2px solid transparent;
+  transition-property: background-color, color, border;
+  transition-duration: var(--duration);
+  transition-timing-function: var(--cubic-bezier);
 
   &:hover,
   &:focus {
