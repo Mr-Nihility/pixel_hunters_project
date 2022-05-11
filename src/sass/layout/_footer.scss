@@ -13,7 +13,7 @@
   }
 }
 
-..footer__contacts {
+.footer__contacts {
   @include mq(tablet) {
     display: flex;
     align-items: center;

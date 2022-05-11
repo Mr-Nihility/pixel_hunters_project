@@ -116,20 +116,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  &--inputs {
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-
-    @include mq(tablet) {
-      margin-bottom: 31px;
-    }
-
-    @include mq(desktop) {
-      margin-bottom: 80px;
-    }
-  }
 }
 
 .registration__item {

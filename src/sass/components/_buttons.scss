@@ -63,6 +63,16 @@
   transition: color var(--duration) var(--cubic-bezier),
     background-color var(--duration) var(--cubic-bezier),
     outline var(--duration) var(--cubic-bezier);
+
+  @include mq(mobile-only) {
+    margin-top: 50px;
+  }
+  @include mq(tablet) {
+    margin-top: 31px;
+  }
+  @include mq(desktop) {
+    margin-top: 80px;
+  }
 }
 
 .button__registration:hover,
