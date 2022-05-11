@@ -60,6 +60,10 @@
     transform: translate(-50%, 0);
     top: 5px;
   }
+  @media screen and (orientation: landscape) and (min-width: 768px) {
+    transform: translate(-50%, 0);
+    top: 5px;
+  }
 }
 
 .close-btn {
