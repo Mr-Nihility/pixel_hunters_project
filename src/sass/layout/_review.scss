@@ -179,14 +179,99 @@
   color: var(--grey-color);
 }
 .card__text {
+  display: inline-block;
   font-weight: var(--medium-weight);
   font-size: 12px;
   line-height: 1.67;
   color: #3d3d3d;
+
+  @include mq(desktop) {
+    font-size: 18px;
+  }
+
+  &.is-hidden {
+    overflow-y: hidden;
+    height: 199px;
+
+    @include mq(tablet) {
+      height: 124px;
+    }
+    @include mq(desktop) {
+      height: 157px;
+    }
+  }
 }
 
-.card__text-link {
+// кнопка
+
+.card__text-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  height: 20px;
+  width: 120px;
   color: var(--accent-color);
+  bottom: 0;
+  left: -6px;
+
+  &.is-hidden {
+    bottom: 20px;
+    left: 35px;
+  }
+
+  @include mq(tablet) {
+    left: 353px;
+
+    bottom: 49px;
+    width: 150px;
+
+    &.is-hidden {
+      bottom: 41px;
+      left: 230px;
+    }
+  }
+
+  @include mq(desktop) {
+    bottom: 64px;
+    left: 736px;
+
+    &.is-hidden {
+      bottom: 57px;
+      left: 620px;
+    }
+  }
+}
+
+.button_text {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration: underline;
+
+  @include mq(desktop) {
+    font-size: 18px;
+  }
+
+  &--open {
+    opacity: 1;
+
+    .card__text-button.is-hidden & {
+      opacity: 0;
+    }
+  }
+  &--close {
+    opacity: 0;
+
+    .card__text-button.is-hidden & {
+      opacity: 1;
+    }
+  }
 }
 
 .slider-nav .slick-current .slider-nav__img {
