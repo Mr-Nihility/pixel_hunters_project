@@ -53,11 +53,15 @@
 
 .nav__link {
   display: inline-block;
-  color: var(--grey-color);
+  color: var(--second-color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1366px) {
+    color: var(--grey-color);
   }
 }
 
