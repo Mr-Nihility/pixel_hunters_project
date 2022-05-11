@@ -6,39 +6,42 @@
   content: '— 0' counter(section) ' ';
   font-weight: var(--bold-weight);
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   letter-spacing: 0.08em;
   color: #ff6b09;
 }
 
 .problems {
   position: relative;
-  padding-top: 25px;
-  height: 545px;
+  padding-bottom: 545px;
   background-color: var(--main-color);
-  margin-bottom: 198px;
 
   @include mq(tablet) {
-    height: 340px;
+    padding-bottom: 340px;
   }
   @include mq(desktop) {
-    height: 560px;
+    padding-bottom: 560px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 0)),
       url(../images/problems/fire.svg);
 
     background-repeat: no-repeat;
-    background-position: right 88px;
+    background-position: right 112px;
   }
 }
-.section {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+.problems-container {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(tablet) {
+    top: 60px;
+  }
+  @include mq(desktop) {
+    top: 100px;
+  }
 }
-// .problems-container {
-//   margin-left: auto;
-//   margin-right: auto;
-// }
+
 .problems__title {
   font-weight: 800;
   font-size: 24px;
@@ -49,10 +52,12 @@
   text-align: left;
   letter-spacing: 1.3px;
   margin-bottom: 25px;
+  @include mq(tablet) {
+  }
+
   @include mq(desktop) {
     font-size: 46px;
     margin-bottom: 70px;
-    margin-top: 100px;
   }
 }
 
@@ -75,55 +80,46 @@
   gap: 15px;
   background-color: #fff;
   box-shadow: 4px 6.928px 15.54px 5.46px rgb(29 29 27 / 11%);
-  list-style: none;
   padding: 19px 14px 19px 30px;
-  // position: absolute;
-  // top: 210px;
-  // left: 50%;
-  // transform: translateX(-50%);
+
   margin-left: auto;
   margin-right: auto;
-  height: 488px;
+
   @include mq(tablet) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 26px 46px 30px 96px;
-    height: 304px;
+    gap: 20px 22px;
   }
   @include mq(desktop) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding: 70px 112px 62px 114px;
-    height: 362px;
+    gap: 60px 40px;
   }
 }
 
 .problems__item {
   position: relative;
   @include mq(tablet) {
-    width: 45%;
+    width: calc((100% - 22px) / 2);
   }
   @include mq(desktop) {
-    width: 30%;
+    width: calc((100% - 80px) / 3);
   }
 }
-
-// .problems__item:nth-child(1) {
-//   margin-top: 29px;
-// }
 
 .problems__subtitle {
   font-weight: var(--bold-weight);
   font-size: 14px;
-  line-height: 20px;
-  /* or 143% */
+  line-height: 1.43;
   letter-spacing: 0.08em;
   color: var(--main-color);
 
   @include mq(desktop) {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.4;
   }
 }
