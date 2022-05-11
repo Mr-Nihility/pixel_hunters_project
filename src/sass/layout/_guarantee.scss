@@ -75,13 +75,14 @@
       background-repeat: no-repeat;
       background-position: center;
       background-color: #f1f1f1;
-      background-image: url(../images/guarantee/campfire-small.svg);
+      background-image: url(../images/guarantee/fire-small.svg);
       z-index: 2;
+
       @include mq(desktop) {
         left: -12px;
         width: 22px;
         height: 30px;
-        background-image: url(../images/guarantee/campfire.svg);
+        background-image: url(../images/guarantee/fire.svg);
       }
     }
   }
