@@ -15,6 +15,7 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -31,7 +32,7 @@
   position: relative;
   min-height: 60px;
   vertical-align: middle;
-  width: 200px;
+  width: 214px;
 
   @include mq(mobile-only) {
     &:not(:last-child) {
@@ -40,7 +41,7 @@
   }
 
   @include mq(desktop) {
-    width: 448px;
+    width: 424px;
     height: 102px;
   }
 
