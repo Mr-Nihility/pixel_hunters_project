@@ -1,20 +1,21 @@
 .hero {
   background-image: url(../images/hero/vector_sm.png);
   background-repeat: no-repeat;
-  background-position: 0 -97px;
+  background-position: 0 93%;
   background-size: 100%;
-  background-color: FEFEFE;
   padding-top: 22px;
-  padding-bottom: 47px;
+  padding-bottom: 87px;
 
   @media screen and (min-width: 480px) {
     background-image: url(../images/hero/vector_sm.png);
+    background-position: 0 -394px;
   }
 
   @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 480px) and (min-resolution: 192dpi),
     screen and (min-width: 480px) and (min-resolution: 2dppx) {
     background-image: url(../images/hero/vector@2x_sm.png);
+    background-position: 0 -394px;
   }
 
   @media screen and (min-width: 768px) {
@@ -34,8 +35,9 @@
 
   @media screen and (min-width: 1366px) {
     background-image: url(../images/hero/vector_lg.png);
-    // background-position: -80px -22px;
-    background-position: 0 0;
+    background-position: -80px -22px;
+    background-size: contain;
+    // background-position: 2px 16px;
     padding-top: 15px;
     padding-bottom: 48px;
   }
@@ -45,7 +47,7 @@
     screen and (min-width: 1366px) and (min-resolution: 2dppx) {
     background-image: url(../images/hero/vector@2x_lg.png);
     // background-position: -80px -22px;
-    background-position: 0 0;
+    background-position: 6px 20px;
   }
 }
 

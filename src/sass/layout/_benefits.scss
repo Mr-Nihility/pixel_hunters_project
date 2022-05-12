@@ -1,6 +1,5 @@
 .benefits {
   counter-reset: section;
-  position: relative;
   padding-top: 25px;
   padding-bottom: 20px;
   background-image: linear-gradient(to bottom, #111518 67%, #fff 67%);
@@ -63,14 +62,14 @@
 //   }
 // }
 .benefits-list {
+  position: relative;
+  z-index: 10;
   padding: 20px 14px 20px 30px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 638px;
+  // margin-left: auto;
+  // margin-right: auto;
   display: flex;
   flex-direction: column;
   box-shadow: 4px 6.928px 15.54px 5.46px rgb(29 29 27 / 4%);
-  list-style: none;
 
   background-color: var(--second-color);
 
