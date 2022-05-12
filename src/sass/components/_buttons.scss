@@ -1,88 +1,110 @@
 .button {
-  margin: 0 auto;
   width: 260px;
   padding: 14px 5px;
   border: 2px solid var(--accent-color);
   font-weight: var(--bold-weight);
-  font-size: var(--small-size);
   line-height: 1.25;
   text-align: center;
-  letter-spacing: var(--large-ls);
   text-transform: uppercase;
+  color: var(--second-color);
+  background-color: var(--accent-color);
   cursor: pointer;
+  transition: color var(--duration) var(--cubic-bezier),
+    background-color var(--duration) var(--cubic-bezier);
 
-  &__hero--lesson,
-  &__registration {
-    color: var(--second-color);
-    background: var(--accent-color);
-
-    @include mq(desktop) {
-      width: 354px;
-      padding: 26px 65px;
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
+  @include mq(mobile-only) {
+    font-size: var(--small-size);
+    letter-spacing: var(--large-ls);
   }
 
-  &__hero--consultation {
-    border: 2px solid var(--accent-color);
-    color: var(--accent-color);
-    background-color: transparent;
-
-    @include mq(tablet) {
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
-
-    @include mq(desktop) {
-      width: 336px;
-      padding: 26px 24px;
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
+  @include mq(tablet) {
+    font-size: var(--main-size);
+    letter-spacing: var(--huge-ls);
+    line-height: 1.2;
   }
-  &--modal {
-    padding: 16px 65px;
-    transition-property: color, background-color;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--cubic-bezier);
 
-    &:hover,
-    &:focus {
-      color: var(--second-color);
-      background-color: var(--accent-color);
-    }
+  @include mq(desktop) {
+    width: 354px;
+    padding: 26px 5px;
   }
+}
+
+.header__button--transparent {
+  display: none;
+  color: var(--accent-color);
+  background-color: transparent;
 
   &:hover,
   &:focus {
     color: var(--second-color);
     background-color: var(--accent-color);
   }
+
+  @include mq(tablet) {
+    display: block;
+    margin-left: 300px;
+  }
+
+  @include mq(desktop) {
+    display: block;
+    width: 336px;
+    margin-right: 0;
+  }
 }
 
-.button__registration {
-  // outline: 2px solid transparent;
-  transition: color var(--duration) var(--cubic-bezier),
-    background-color var(--duration) var(--cubic-bezier);
+.hero__button--orange {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 52px;
 
-  @include mq(mobile-only) {
-    margin-top: 50px;
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: transparent;
   }
+
+  @include mq(tablet) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  @include mq(desktop) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+
+.footer__button--transparent {
+  margin-top: 50px;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    background-color: transparent;
+  }
+
   @include mq(tablet) {
     margin-top: 31px;
   }
+
   @include mq(desktop) {
+    width: 354px;
     margin-top: 80px;
   }
 }
 
-.button__registration:hover,
-.button__registration:focus {
+.modal__button--orange {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px 65px;
   color: var(--accent-color);
   background-color: transparent;
-  // border: 2px solid var(--accent-color);
+
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    background-color: var(--accent-color);
+  }
 }

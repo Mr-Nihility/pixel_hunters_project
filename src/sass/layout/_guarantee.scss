@@ -11,9 +11,11 @@
     font-size: 26px;
     line-height: 1.3;
     text-align: center;
+
     letter-spacing: 0.03em;
     margin-bottom: 80px;
     // background-color: #fff;
+
 
     @include mq(tablet) {
       font-size: 26px;
@@ -135,5 +137,5 @@
   }
 }
 .guarantee-text-decor {
-  color: #ff6b09;
+  color: var(--accent-color);
 }

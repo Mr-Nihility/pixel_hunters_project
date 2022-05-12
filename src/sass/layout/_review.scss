@@ -167,7 +167,7 @@
   font-size: var(--main-size);
   line-height: 1.21;
   letter-spacing: var(--large-ls);
-  color: #ff6b09;
+  color: var(--accent-color);
 }
 .card__desc {
   margin-bottom: 16px;
@@ -288,7 +288,7 @@
 }
 
 .slider-nav .slick-current .slider-nav__img {
-  border: 1px solid #ff6b09;
+  border: 1px solid var(--accent-color);
   filter: brightness(100%);
 }
 .slider-nav .slider-nav__img {
