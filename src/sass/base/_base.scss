@@ -1,7 +1,5 @@
 body {
   margin: 0;
-
-  // кольори і шрифт прописати через змінні і
   font-family: var(--main-font);
   color: var(--main-color);
   background-color: var(--second-color);
@@ -19,7 +17,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
-  outline: 1px solid tomato;
+  // outline: 1px solid tomato;
   width: 100%;
 
   @media screen and (min-width: 480px) {
