@@ -21,7 +21,7 @@
   text-align: center;
   width: 240px;
   margin: 0 auto 32px;
-  letter-spacing: 1px;
+  letter-spacing: var(--main-ls);
 
   @include mq(tablet) {
     font-size: 26px;
@@ -130,7 +130,7 @@
   font-size: 14px;
   line-height: 1.4;
   text-align: center;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--large-ls);
   margin: 20px 0 30px;
   width: 100%;
   height: 40px;
@@ -172,7 +172,7 @@
   font-size: 12px;
   line-height: 1.7;
   text-align: center;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--large-ls);
   color: var(--grey-color);
   transition-property: color;
   transition-duration: 250ms;
