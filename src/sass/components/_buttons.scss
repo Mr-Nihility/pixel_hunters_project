@@ -76,6 +76,7 @@
 }
 
 .footer__button--transparent {
+  position: relative;
   margin-top: 50px;
 
   &:hover,
@@ -94,6 +95,60 @@
   }
 }
 
+.dot {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: calc(var(354px) * 0.2);
+  height: 100%;
+  border-radius: 100%;
+  transition: all 300ms ease;
+  display: none;
+}
+
+.dot:after {
+  content: '';
+  position: absolute;
+  left: calc(50% - 0.4em);
+  top: -0.4em;
+  // top: -8px;
+  // left: -8px;
+  height: 1em;
+  width: 1em;
+  background: var(--accent-color);
+  border-radius: 2em;
+  border: 0.25em solid var(--second-color);
+  box-shadow: 0 0 0.7em var(--second-color), 0 0 2em var(--second-color);
+}
+
+.footer__button--transparent:hover .dot,
+.footer__button--transparent:focus .dot {
+  animation: atom 2s infinite linear;
+  display: block;
+}
+
+@keyframes atom {
+  0% {
+    transform: translateX(-7px) translateY(0);
+  }
+
+  40% {
+    transform: translateX(348px) translateY(0);
+  }
+
+  50% {
+    transform: translateX(348px) translateY(70px);
+  }
+
+  90% {
+    transform: translateX(-7px) translateY(70px);
+  }
+
+  100% {
+    transform: translateX(-7px) translateY(0);
+  }
+}
+
 .modal__button--orange {
   display: block;
   margin-left: auto;
@@ -106,5 +161,23 @@
   &:focus {
     color: var(--second-color);
     background-color: var(--accent-color);
+  }
+}
+
+.mobile__button--transparent {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--accent-color);
+  background-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+    background-color: var(--accent-color);
+  }
+
+  @include mq(tablet) {
+    display: none;
   }
 }
