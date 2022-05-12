@@ -163,6 +163,6 @@
 
   @include mq(desktop) {
     font-size: var(--medium-size);
-    letter-spacing: 0.08em;
+    letter-spacing: var(--large-ls);
   }
 }

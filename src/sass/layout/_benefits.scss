@@ -2,18 +2,18 @@
   counter-reset: section;
   padding-top: 25px;
   padding-bottom: 20px;
-  background-image: linear-gradient(to bottom, #111518 67%, #fff 67%);
+  background-image: linear-gradient(to bottom, var(--main-color) 67%, #fff 67%);
 
   @include mq(tablet) {
     padding-top: 95px;
     padding-bottom: 25px;
-    background-image: linear-gradient(to bottom, #111518 48%, #fff 48%);
+    background-image: linear-gradient(to bottom, var(--main-color) 48%, #fff 48%);
   }
 
   @include mq(desktop) {
     padding-top: 82px;
     padding-bottom: 65px;
-    background-image: linear-gradient(to bottom, #111518 53%, #fff 53%);
+    background-image: linear-gradient(to bottom, var(--main-color) 53%, #fff 53%);
   }
 
   &__title {
@@ -22,7 +22,7 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 1.35;
-    letter-spacing: 0.03em;
+    letter-spacing: var(--main-ls);
     margin-bottom: 30px;
     width: 180px;
     height: 50px;
@@ -94,7 +94,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.4;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--large-ls);
   @include mq(desktop) {
     font-size: 20px;
   }
@@ -114,6 +114,6 @@
   font-weight: var(--bold-weight);
   font-size: 20px;
   line-height: 1.2;
-  letter-spacing: 0.08em;
+  letter-spacing: var(--large-ls);
   color: var(--accent-color);
 }
