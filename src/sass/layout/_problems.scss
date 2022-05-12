@@ -70,6 +70,7 @@
 .problems__title-span-accent {
   color: var(--accent-color);
 }
+
 .problems__title-span {
   display: block;
   @include mq(tablet) {
@@ -87,7 +88,6 @@
   background-color: #fff;
   box-shadow: 4px 6.928px 15.54px 5.46px rgb(29 29 27 / 11%);
   padding: 19px 14px 19px 30px;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -98,6 +98,7 @@
     padding: 26px 46px 30px 96px;
     gap: 20px 22px;
   }
+
   @include mq(desktop) {
     display: flex;
     flex-direction: row;
@@ -109,9 +110,11 @@
 
 .problems__item {
   position: relative;
+
   @include mq(tablet) {
     width: calc((100% - 22px) / 2);
   }
+
   @include mq(desktop) {
     width: calc((100% - 80px) / 3);
   }
