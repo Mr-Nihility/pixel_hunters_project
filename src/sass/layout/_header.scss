@@ -8,9 +8,6 @@
   align-items: center;
 }
 
-// .header__logo {
-// }
-
 .logo {
   width: 80px;
 }
@@ -64,26 +61,6 @@
     color: var(--grey-color);
   }
 }
-
-// .nav-btn {
-//   display: none;
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//     color: var(--second-color);
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     display: block;
-//     margin-left: 300px;
-//   }
-
-//   @media screen and (min-width: 1366px) {
-//     display: block;
-//     margin-right: 0;
-//   }
-// }
 
 .burger__btn {
   position: relative;
