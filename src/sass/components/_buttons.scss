@@ -95,6 +95,9 @@
 }
 
 .modal__button--orange {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 16px 65px;
   color: var(--accent-color);
   background-color: transparent;
