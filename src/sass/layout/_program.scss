@@ -300,7 +300,7 @@
     }
   }
   @include mq(tablet) {
-    min-width: 176px;
+    min-width: 160px;
 
     &:not(:last-child) {
       margin-bottom: 0px;
