@@ -1,5 +1,5 @@
 .button {
-  margin: 0 auto;
+  // margin: 0 auto;
   width: 260px;
   padding: 14px 5px;
   border: 2px solid var(--accent-color);
@@ -10,40 +10,48 @@
   letter-spacing: var(--large-ls);
   text-transform: uppercase;
   cursor: pointer;
+  transition: color var(--duration) var(--cubic-bezier),
+    background-color var(--duration) var(--cubic-bezier);
 
-  &__hero--lesson,
-  &__registration {
-    color: var(--second-color);
-    background: var(--accent-color);
+  // &:hover,
+  // &:focus {
+  //   color: var(--second-color);
+  //   background-color: var(--accent-color);
+  // }
 
-    @include mq(desktop) {
-      width: 354px;
-      padding: 26px 65px;
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
-  }
+  // &__hero--lesson,
+  // &__registration {
+  //   color: var(--second-color);
+  //   background: var(--accent-color);
 
-  &__hero--consultation {
-    border: 2px solid var(--accent-color);
-    color: var(--accent-color);
-    background-color: transparent;
+  //   @include mq(desktop) {
+  //     width: 354px;
+  //     padding: 26px 65px;
+  //     font-size: var(--main-size);
+  //     line-height: 1.2;
+  //     letter-spacing: var(--huge-ls);
+  //   }
+  // }
 
-    @include mq(tablet) {
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
+  // &__hero--consultation {
+  //   border: 2px solid var(--accent-color);
+  //   color: var(--accent-color);
+  //   background-color: transparent;
 
-    @include mq(desktop) {
-      width: 336px;
-      padding: 26px 24px;
-      font-size: var(--main-size);
-      line-height: 1.2;
-      letter-spacing: var(--huge-ls);
-    }
-  }
+  //   @include mq(tablet) {
+  //     font-size: var(--main-size);
+  //     line-height: 1.2;
+  //     letter-spacing: var(--huge-ls);
+  //   }
+
+  //   @include mq(desktop) {
+  //     width: 336px;
+  //     padding: 26px 24px;
+  //     font-size: var(--main-size);
+  //     line-height: 1.2;
+  //     letter-spacing: var(--huge-ls);
+  //   }
+  // }
   &--modal {
     padding: 16px 65px;
     transition-property: color, background-color;
@@ -56,17 +64,17 @@
       background-color: var(--accent-color);
     }
   }
-
-  &:hover,
-  &:focus {
-    color: var(--second-color);
-    background-color: var(--accent-color);
-  }
 }
 
 .button__registration {
+<<<<<<< Updated upstream
   transition: color var(--duration) var(--cubic-bezier),
     background-color var(--duration) var(--cubic-bezier);
+=======
+  // outline: 2px solid transparent;
+  // transition: color var(--duration) var(--cubic-bezier),
+  //   background-color var(--duration) var(--cubic-bezier);
+>>>>>>> Stashed changes
 
   @include mq(mobile-only) {
     margin-top: 50px;
