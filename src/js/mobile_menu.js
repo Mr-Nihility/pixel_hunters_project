@@ -4,8 +4,17 @@
   const mobileMenuRef = document.querySelector('[data-menu]');
   const body = document.querySelector('body');
   const modal = document.querySelector('[data-modal]');
+  const navLinks = document.querySelectorAll('.nav__link');
 
-  menuBtnRef.addEventListener('click', () => {
+  menuBtnRef.addEventListener('click', toggleMenu);
+  navLinks.forEach(link => link.addEventListener('click', toggleMenu));
+  innerBtnRef.addEventListener('click', () => {
+    mobileMenuRef.classList.toggle('is-open');
+    modal.classList.toggle('is-hidden');
+    menuBtnRef.classList.toggle('is-open');
+  });
+
+  function toggleMenu() {
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
     menuBtnRef.classList.toggle('is-open');
@@ -13,10 +22,5 @@
 
     mobileMenuRef.classList.toggle('is-open');
     body.classList.toggle('no-scroll');
-  });
-  innerBtnRef.addEventListener('click', () => {
-    mobileMenuRef.classList.toggle('is-open');
-    modal.classList.toggle('is-hidden');
-    menuBtnRef.classList.toggle('is-open');
-  });
+  }
 })();
