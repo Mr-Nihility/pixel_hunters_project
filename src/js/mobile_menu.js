@@ -8,13 +8,21 @@
 
   menuBtnRef.addEventListener('click', toggleMenu);
   navLinks.forEach(link => link.addEventListener('click', toggleMenu));
+
   innerBtnRef.addEventListener('click', () => {
     mobileMenuRef.classList.toggle('is-open');
     modal.classList.toggle('is-hidden');
     menuBtnRef.classList.toggle('is-open');
+    body.classList.toggle('no-scroll');
   });
 
   function toggleMenu() {
+    const viewPortSize = window.innerWidth;
+
+    if (viewPortSize > 1365) {
+      return;
+    }
+
     const expanded = menuBtnRef.getAttribute('aria-expanded') === 'true' || false;
 
     menuBtnRef.classList.toggle('is-open');
