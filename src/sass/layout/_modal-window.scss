@@ -40,10 +40,6 @@
   // box-shadow: inset -35px -35px 70px #101314, inset 35px 35px 70px #404b52;
 
   // border: 1px solid var(--accent-color);
-  // @media screen and (orientation: landscape) {
-  //   transform: translate(-50%, 0);
-  //   top: 5px;
-  // }
 
   @media screen and (max-width: 479px) {
     width: calc(100% - 10px);
@@ -60,6 +56,10 @@
   @media screen and (min-width: 1200px) {
     width: 528px;
   }
+
+  // @media (orientation: landscape) {
+  //   transform: translate(-50%, -27%);
+  // }
 }
 
 .close-btn {
@@ -265,4 +265,3 @@
     color: var(--grey-color);
   }
 }
-
